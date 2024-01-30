@@ -1,0 +1,14 @@
+name: Test on Release
+
+on:
+  push:
+    branches:
+      - branch-2
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Workflow triggered on release creation"
